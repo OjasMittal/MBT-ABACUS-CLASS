@@ -12,13 +12,13 @@ st.sidebar.image(ime,
              width=40)
 st.sidebar.subheader("Facebook Page: https://rb.gy/rju3lw")
 
-#hide_menu_style="""
-#<style>
-#MainMenu{visibility:hidden;}
-#footer{visibility:hidden;}
-#</style>
-#"""
-# st.markdown(hide_menu_style,unsafe_allow_html=True)
+hide_menu_style="""
+<style>
+MainMenu{visibility:hidden;}
+footer{visibility:hidden;}
+</style>
+"""
+st.markdown(hide_menu_style,unsafe_allow_html=True)
 
 st.title("MBT ABACUS CLASS \N{trophy}")
 st.subheader(" ")
