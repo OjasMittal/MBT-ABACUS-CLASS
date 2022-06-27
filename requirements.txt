@@ -1,2 +1,1 @@
-import streamlit as st
-from PIL import Image
+streamlit==1.8.1
