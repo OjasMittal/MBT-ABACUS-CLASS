@@ -34,7 +34,7 @@ footer{visibility:hidden;}
 """
 st.markdown(hide_menu_style,unsafe_allow_html=True)
 
-st.title("MBT ABACUS CLASS \N{trophy}")
+st.title("***\N{brain}MBT ABACUS CLASS***\N{trophy}")
 st.write("***MBT Abacus Class was started in the year 2014 by Mrs.Tulika Mittal with a "
              "hope to provide something good to the society and promote women entrepreneurship.***")
 col1,col2=st.columns(2)
@@ -51,7 +51,7 @@ st.write("MBT is authorised franchise of **Mastermind** and **WriteRight-India**
 image = Image.open('class.jpg')
 st.image(image, caption='MBT ABACUS CLASS,SEAWOODS,NAVI MUMBAI',
              width=400)
-st.title("Abacus")
+st.title("ABACUS")
 image1 = Image.open('mastermindabacus-logo.png')
 st.image(image1, caption='Mastermind Abacus',
              width=400)
@@ -114,11 +114,11 @@ annotated_text(("Method", ":","#8ef"),("Fun & Learn Method with special speed bu
 st.write(" ")
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
-st.title("Handwriting Improvement")
+st.title("HANDWRITING")
 image2 = Image.open('write right.png')
 st.image(image2, caption='Write Right India',
              width=400)
-st.header("Handwriting Can Be Improved At Any Age!")
+st.header("***Handwriting Can Be Improved At Any Age!***")
 st.write("**But, the fact is that Handwriting invariably, can be corrected at any age."
              " The only condition applied is that the writer should have steady hands.**")
 st.write("***MBT is an authorized franchise of Write Right India and offers 3 types of handwriting courses:***")
@@ -141,7 +141,7 @@ with col2:
              width=350)
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
-st.title("Guitar")
+st.title("GUITAR")
 image5=Image.open('guitar.jpg')
 st.image(image5, caption='Enhance your skills!',
              width=300)
