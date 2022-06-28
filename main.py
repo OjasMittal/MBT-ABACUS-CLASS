@@ -5,9 +5,9 @@ import emoji
 
 img=Image.open('icon.jpg')
 st.set_page_config(page_title="MBT ABACUS CLASS",page_icon=img)
-c1,c2,c3=st.columns(3)
+c1,c2,c3,c4,c5,c6=st.sidebar.columns(6)
 with c2:
-  st.sidebar.image(img, caption='MBT ABACUS CLASS',width=190)
+  st.image(img, caption='MBT ABACUS CLASS',width=190)
 st.sidebar.title("CONTACT INFORMATION :")
 st.sidebar.write("***Address:***   MBT Abacus Class,Shop No 13,Shri om sadguru chs, Dattatray Tandel Marg, New Sector-50, Seawoods, Navi Mumbai, Maharashtra 400706")
 st.sidebar.write("***Contact:***  9920092640 ~ Tulika Mittal (Center Director)")
