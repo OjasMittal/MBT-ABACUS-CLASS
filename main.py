@@ -10,22 +10,18 @@ with c2:
   st.image(img, caption='MBT ABACUS CLASS',width=190)
 st.sidebar.title("CONTACT INFORMATION :")
 st.sidebar.write("***Address:***   MBT Abacus Class,Shop No 13,Shri om sadguru chs, Dattatray Tandel Marg, New Sector-50, Seawoods, Navi Mumbai, Maharashtra 400706")
-st.sidebar.write("***Contact:***  9920092640 ~ Tulika Mittal (Center Director)")
-col1,col2,col3=st.sidebar.columns(3)
+st.sidebar.write("***Contact:***  **9920092640** ~ Tulika Mittal (Center Director)")
+col1,col2=st.sidebar.columns(2)
 with col1:
     ime = Image.open('fb logo.png')
     st.image(ime,
-             width=40)
-    ima = Image.open('insta.jpg')
+             width=30)
+    ima = Image.open('insta_logo.jpg')
     st.image(ima,
-             width=40)
+             width=30)
 with col2:
-    st.write("**Facebook Page :**")
-    st.write("**Instagram Page :**")
-with col3:
     st.write('https://rb.gy/rju3lw')
-    st.write('http://surl.li/chprm')
-
+    st.write('https://rb.gy/pfdqdj')
 hide_menu_style="""
 <style>
 #MainMenu{visibility:hidden;}
@@ -151,13 +147,19 @@ st.subheader("Kindly fill the form below for further discussion and enrollment."
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
 st.subheader("Thanks for Visiting!")
 st.info('This Website has been developed by an MBT Alumini. \N{slightly smiling face}')
-col1,col2,col3,col4,col5,c6,c7,c8,c9,c10=st.columns(10)
-with col1:
-    if st.button(emoji.emojize(':thumbs_up:',use_aliases=True)):
+c1,c2,c3,c4,c5,c6=st.columns(6)
+with c1:
+   if st.button(emoji.emojize(':thumbs_up:',use_aliases=True)):
         st.balloons()
-with col2:
-    if st.button(emoji.emojize(':thumbs_down:',use_aliases=True)):
-        st.snow()
+
+st.subheader('Review and Ratings')
+imagee5 = Image.open('maps.png')
+st.image(imagee5, 'Seawoods,Navi Mumbai', width=200)
+url = 'https://reviewthis.biz/mbt-abacus'
+st.write('***WRITE A REVIEW***')
+st.write('**Click [here](%s) to give your reviews on Google Maps**' % url)
+
+
 
 
 
