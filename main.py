@@ -145,19 +145,20 @@ st.write("**MBT has tied up with Plexus Academy to provide best quality guitar l
 annotated_text(("Wednesday","from",'#8ef'),("7:00-8:30","pm","#faa"))
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
+
+
+st.header('Review and Ratings')
+imagee5 = Image.open('maps.png')
+st.image(imagee5, 'Seawoods,Navi Mumbai', width=200)
+url = 'https://reviewthis.biz/mbt-abacus'
+st.write('***WRITE A REVIEW***')
+st.write('**Click [here](%s) to give your reviews on Google Maps**' % url)
 st.subheader("Thanks for Visiting!")
 st.info('This Website has been developed by an MBT Alumini. \N{slightly smiling face}')
 c1,c2,c3,c4,c5,c6=st.columns(6)
 with c1:
    if st.button(emoji.emojize(':thumbs_up:',use_aliases=True)):
         st.balloons()
-
-st.subheader('Review and Ratings')
-imagee5 = Image.open('maps.png')
-st.image(imagee5, 'Seawoods,Navi Mumbai', width=200)
-url = 'https://reviewthis.biz/mbt-abacus'
-st.write('***WRITE A REVIEW***')
-st.write('**Click [here](%s) to give your reviews on Google Maps**' % url)
 
 
 
