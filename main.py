@@ -10,9 +10,9 @@ st.set_page_config(page_title="MBT ABACUS CLASS",page_icon=img)
 c1,c2,c3,c4,c5,c6=st.sidebar.columns(6)
 with c2:
   st.image(img, caption='MBT ABACUS CLASS',width=190)
-st.sidebar.title("CONTACT INFORMATION :")
-st.sidebar.write("***Address:***   MBT Abacus Class,Shop No 13,Shri om sadguru chs, Dattatray Tandel Marg, New Sector-50, Seawoods, Navi Mumbai, Maharashtra 400706")
-st.sidebar.write("***Contact:***  **9920092640** ~ Tulika Mittal (Center Director)")
+st.sidebar.title(" CONTACT INFORMATION :")
+st.sidebar.write(":mailbox: ***Address:***   MBT Abacus Class,Shop No 13,Shri om sadguru chs, Dattatray Tandel Marg, New Sector-50, Seawoods, Navi Mumbai, Maharashtra 400706")
+st.sidebar.write(":phone: ***Contact:***  **9920092640** ~ Tulika Mittal (Center Director)")
 col1,col2=st.sidebar.columns([1,4])
 with col1:
     ime = Image.open('fb logo.png')
