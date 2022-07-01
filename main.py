@@ -2,15 +2,31 @@ import streamlit as st
 from PIL import Image
 from annotated_text import annotated_text
 import emoji
+import requests
+from streamlit_lottie import st_lottie,st_lottie_spinner
+
 
 
 img=Image.open('icon.jpg')
 st.set_page_config(page_title="MBT ABACUS CLASS",page_icon=img)
+#Animation
+def load_lottie_url(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 c1,c2,c3,c4,c5,c6=st.sidebar.columns(6)
 with c2:
   st.image(img, caption='MBT ABACUS CLASS',width=190)
-st.sidebar.title(" CONTACT INFORMATION :")
+
+with st.sidebar:
+    c1,c2,c3=st.columns([1,3,1])
+    with c2:
+        lottie_animation_4 = "https://assets6.lottiefiles.com/packages/lf20_pbsn1omx.json"
+        lottie_anime_json4 = load_lottie_url(lottie_animation_4)
+        st_lottie(lottie_anime_json4,key="contact")
+
 st.sidebar.write(":mailbox: ***Address:***   MBT Abacus Class,Shop No 13,Shri om sadguru chs, Dattatray Tandel Marg, New Sector-50, Seawoods, Navi Mumbai, Maharashtra 400706")
 st.sidebar.write(":phone: ***Contact:***  **9920092640** ~ Tulika Mittal (Center Director)")
 col1,col2=st.sidebar.columns([1,4])
@@ -33,6 +49,16 @@ footer{visibility:hidden;}
 st.markdown(hide_menu_style,unsafe_allow_html=True)
 
 st.title("***\N{brain}MBT ABACUS CLASS***\N{trophy}")
+
+
+col1,col2,col3=st.columns([1,2,1])
+
+with col2:
+    lottie_animation_2 = "https://assets4.lottiefiles.com/packages/lf20_1pxqjqps.json"
+
+    lottie_anime_json2 = load_lottie_url(lottie_animation_2)
+    st_lottie(lottie_anime_json2, key = "calculation")
+
 st.write("***MBT Abacus Class was started in the year 2014 by Mrs.Tulika Mittal with a "
              "hope to provide something good to the society and promote women entrepreneurship.***")
 col1,col2=st.columns(2)
@@ -50,9 +76,16 @@ image = Image.open('class.jpg')
 st.image(image, caption='MBT ABACUS CLASS,SEAWOODS,NAVI MUMBAI',
              width=400)
 st.title("ABACUS")
-image1 = Image.open('mastermindabacus-logo.png')
-st.image(image1, caption='Mastermind Abacus',
-             width=400)
+col1,col2=st.columns([3,1])
+with col1:
+    image1 = Image.open('mastermindabacus-logo.png')
+    st.image(image1, caption='Mastermind Abacus',
+                 width=400)
+with col2:
+    lottie_animation_1 = "https://assets6.lottiefiles.com/packages/lf20_hv2s4zdr.json"
+
+    lottie_anime_json = load_lottie_url(lottie_animation_1)
+    st_lottie(lottie_anime_json, key="hello")
 st.write("**Finding a quality Abacus academy for a child is not easy, as parents are not"
              " aware of the intricacies of Abacus training & learning.MBT is the Navi Mumbai Master Franchise of Mastermind Abacus.**")
 col1,col2=st.columns(2)
@@ -113,9 +146,16 @@ st.write(" ")
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
 st.title("HANDWRITING")
-image2 = Image.open('write right.png')
-st.image(image2, caption='Write Right India',
-             width=400)
+col1,col2=st.columns([2,1])
+with col1:
+    image2 = Image.open('write right.png')
+    st.image(image2, caption='Write Right India',
+                 width=400)
+with col2:
+    lottie_animation_3 = "https://assets9.lottiefiles.com/packages/lf20_1c4di8xm.json"
+    lottie_anime_json3 = load_lottie_url(lottie_animation_3)
+    st_lottie(lottie_anime_json3, key="handwriting")
+
 st.header("***Handwriting Can Be Improved At Any Age!***")
 st.write("**But, the fact is that Handwriting invariably, can be corrected at any age."
              " The only condition applied is that the writer should have steady hands.**")
@@ -140,9 +180,15 @@ with col2:
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
 st.title("GUITAR")
-image5=Image.open('guitar.jpg')
-st.image(image5, caption='Enhance your skills!',
-             width=300)
+c1,c2=st.columns([2,1])
+with c1:
+    image5=Image.open('guitar.jpg')
+    st.image(image5, caption='Enhance your skills!',
+                 width=300)
+with c2:
+    lottie_animation_4 = "https://assets5.lottiefiles.com/packages/lf20_GmXdtd.json"
+    lottie_anime_json4 = load_lottie_url(lottie_animation_4)
+    st_lottie(lottie_anime_json4,key="guitar")
 st.write("**MBT has tied up with Plexus Academy to provide best quality guitar lessons.Classes occurs every-**")
 annotated_text(("Wednesday","from",'#8ef'),("7:00-8:30","pm","#faa"))
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
@@ -150,11 +196,17 @@ st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
 
 
 st.header('Review and Ratings')
+
 imagee5 = Image.open('maps.png')
 st.image(imagee5, 'Seawoods,Navi Mumbai', width=200)
 url = 'https://reviewthis.biz/mbt-abacus'
 st.write('***WRITE A REVIEW***')
 st.write('**Click [here](%s) to give your reviews on Google Maps**' % url)
+c1,c2,c3=st.columns(3)
+with c1:
+    lottie_animation_4 = "https://assets6.lottiefiles.com/datafiles/QDHTh1tUmPJvYoz/data.json"
+    lottie_anime_json4 = load_lottie_url(lottie_animation_4)
+    st_lottie(lottie_anime_json4, key="review")
 st.subheader("Thanks for Visiting!")
 st.info('This Website has been developed by an MBT Alumini. \N{slightly smiling face}')
 c1,c2,c3,c4,c5,c6=st.columns(6)
