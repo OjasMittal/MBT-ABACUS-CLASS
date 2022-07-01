@@ -3,7 +3,7 @@ from PIL import Image
 from annotated_text import annotated_text
 import emoji
 import requests
-from streamlit_lottie import st_lottie,st_lottie_spinner
+from streamlit_lottie import st_lottie
 
 
 
