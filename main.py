@@ -16,12 +16,12 @@ def load_lottie_url(url: str):
         return None
     return r.json()
 
-c1,c2,c3,c4,c5,c6=st.sidebar.columns(6)
-with c2:
-  st.image(img, caption='MBT ABACUS CLASS',width=190)
+#c1,c2,c3,c4,c5,c6=st.sidebar.columns(6)
+#with c2:
+ # st.image(img, caption='MBT ABACUS CLASS',width=190)
 
 with st.sidebar:
-    c1,c2,c3=st.columns([1,3,1])
+    c1,c2,c3=st.columns([1,4,1])
     with c2:
         lottie_animation_4 = "https://assets6.lottiefiles.com/packages/lf20_pbsn1omx.json"
         lottie_anime_json4 = load_lottie_url(lottie_animation_4)
