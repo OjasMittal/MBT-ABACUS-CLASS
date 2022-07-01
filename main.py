@@ -27,7 +27,7 @@ with st.sidebar:
         st_lottie(lottie_anime_json4,key="contact")
 
 st.sidebar.write(":mailbox: ***Address:***   MBT Abacus Class,Shop No 13,Shri om sadguru chs, Dattatray Tandel Marg, New Sector-50, Seawoods, Navi Mumbai, Maharashtra 400706")
-st.sidebar.write(":round_pushpin: <a href='https://goo.gl/maps/G19WwR18pjKeKUYM6'> Get Directions </a>",unsafe_allow_html=True)
+st.sidebar.write(":round_pushpin: <a href='https://goo.gl/maps/G19WwR18pjKeKUYM6'> **Get Directions** </a>",unsafe_allow_html=True)
 st.sidebar.write(":phone: ***Contact:***  **<a href='tel:9920092640'>9920092640</a>** ~ Tulika Mittal (Center Director)",unsafe_allow_html=True)
 
 col1,col2=st.sidebar.columns([1,4])
