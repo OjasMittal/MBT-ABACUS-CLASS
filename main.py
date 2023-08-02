@@ -4,7 +4,7 @@ from annotated_text import annotated_text
 import emoji
 import requests
 from streamlit_lottie import st_lottie
-
+import random
 
 img=Image.open('icon.jpg')
 st.set_page_config(page_title="MBT ABACUS CLASS",page_icon=img)
@@ -182,6 +182,17 @@ with col2:
              width=310)
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
+st.title("GRAPHOLOGY")
+st._transparent_write("Graphology is the science and art of studying handwriting patterns to understand"
+                      " the subconscious mind and personality traits of an individual. It is based on the belief"
+                      " that every stroke, curve, and line in one's handwriting reflects their unique character, "
+                      "emotions, and attitudes. By examining various elements of handwriting, such as size, slant, "
+                      "pressure, spacing, and more, we gain valuable insights into an individuals psychological makeup.")
+col1,col2=st.columns(2)
+with col1:
+    st.image('grapho1.jpg',width=310)
+with col2:
+    st.image('grapho2.jpg',width=400,caption='Feedbacks')
 # st.title("GUITAR")
 # c1,c2=st.columns([2,1])
 # with c1:
@@ -204,7 +215,7 @@ imagee5 = Image.open('maps.png')
 st.image(imagee5, 'Seawoods,Navi Mumbai', width=200)
 url = 'https://reviewthis.biz/mbt-abacus'
 st.write('***WRITE A REVIEW***')
-st.write('**Click [here](%s) to give your reviews on Google Maps**' % url)
+st.write('**Click [here](%s) to give your reviews on Google Maps !!**' % url)
 c1,c2,c3=st.columns(3)
 with c1:
     lottie_animation_4 = "https://assets6.lottiefiles.com/datafiles/QDHTh1tUmPJvYoz/data.json"
@@ -213,9 +224,19 @@ with c1:
 st.subheader("Thanks for Visiting!")
 st.info('This Website has been developed by an MBT Alumini. \N{slightly smiling face}')
 c1,c2,c3,c4,c5,c6=st.columns(6)
-with c1:
-   if st.button(emoji.emojize(':thumbs_up:',use_aliases=True)):
+num =random.randint(1, 999)
+flag=False
+col1,col2=st.columns([1,8])
+with col1:
+    if st.button(emoji.emojize(':thumbs_up:',use_aliases=True)):
+        flag=True
+with col2:
+    if flag==False:
+        st.text('⬅️ Click here for a surprise !')
+if flag:
+        st.success(f"**Congratulations !!** You have won a discount coupon!!\n Get **FLAT 10% off** on registration fees.\n\n **Coupon Code: MBTWEB{num}**")
         st.balloons()
+        flag=False
 
 
 
