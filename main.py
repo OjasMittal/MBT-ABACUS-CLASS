@@ -15,9 +15,6 @@ def load_lottie_url(url: str):
         return None
     return r.json()
 
-#c1,c2,c3,c4,c5,c6=st.sidebar.columns(6)
-#with c2:
- # st.image(img, caption='MBT ABACUS CLASS',width=190)
 
 with st.sidebar:
     c1,c2,c3=st.columns([1,4,1])
@@ -33,14 +30,19 @@ st.sidebar.write(":phone: ***Contact:***  **<a href='tel:9920092640'>9920092640<
 col1,col2=st.sidebar.columns([1,4])
 with col1:
     ime = Image.open('fb logo.png')
-    st.image(ime,
-             width=30)
+    st.image(ime,width=30)
     ima = Image.open('insta_logo.jpg')
-    st.image(ima,
-             width=30)
+    st.write('')
+    st.image(ima,width=30)
+    imb=Image.open('youtube_logo.png')
+    st.write('')
+    st.image(imb,width=30)
 with col2:
     st.write('https://rb.gy/rju3lw')
+    st.write('')
     st.write('https://rb.gy/pfdqdj')
+    st.write('')
+    st.write('https://surl.li/jrllj')
 hide_menu_style="""
 <style>
 #MainMenu{visibility:hidden;}
@@ -123,16 +125,16 @@ st.write("**They expect whole-brain development and increased confidence "
 
 col1,col2,col3=st.columns(3)
 with col1:
-    st.video('https://youtu.be/6eFyspBqvNE')
+    st.video('https://youtu.be/jRfoVg34Pkk')
 with col2:
     st.video('https://www.youtube.com/watch?v=Gu1zvqtXJzA')
 with col3:
-    st.video('https://www.youtube.com/watch?v=9GoGHxOjGtA')
+    st.video('https://youtu.be/2q-TMeRxmTs')
 col1,col2,col3=st.columns(3)
 with col1:
-    st.video('https://www.youtube.com/watch?v=a9BnNWrzHY4')
+    st.video('https://youtu.be/XdSlHnDIg-4')
 with col2:
-    st.video('https://www.youtube.com/watch?v=1grEKIqDDVA')
+    st.video('https://www.youtube.com/watch?v=1grEKIqDDVA&t=1s')
 with col3:
     st.video('https://www.youtube.com/watch?v=VbG92I6cp1Q')
 st.write(
@@ -171,29 +173,29 @@ st.write(" ")
 st.header(" ")
 col1,col2=st.columns(2)
 with col1:
-  image3 = Image.open('handwr.jpg')
+  image3 = Image.open('sample.jpg')
   st.image(image3, caption='100% Money Back Challenge',
              width=350)
 with col2:
-  image4=Image.open('handwriting.jpg')
+  image4=Image.open('sample_hindi.jpg')
   st.image(image4, caption='Gift yourself a beautiful handwriting!',
-             width=350)
+             width=310)
 st.subheader("Kindly fill the form below for further discussion and enrollment.")
 st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
-st.title("GUITAR")
-c1,c2=st.columns([2,1])
-with c1:
-    image5=Image.open('guitar.jpg')
-    st.image(image5, caption='Enhance your skills!',
-                 width=300)
-with c2:
-    lottie_animation_4 = "https://assets5.lottiefiles.com/packages/lf20_GmXdtd.json"
-    lottie_anime_json4 = load_lottie_url(lottie_animation_4)
-    st_lottie(lottie_anime_json4,key="guitar")
-st.write("**MBT has tied up with Plexus Academy to provide best quality guitar lessons.Classes occurs every-**")
-annotated_text(("Wednesday","from",'#8ef'),("7:00-8:30","pm","#faa"))
-st.subheader("Kindly fill the form below for further discussion and enrollment.")
-st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
+# st.title("GUITAR")
+# c1,c2=st.columns([2,1])
+# with c1:
+#     image5=Image.open('guitar.jpg')
+#     st.image(image5, caption='Enhance your skills!',
+#                  width=300)
+# with c2:
+#     lottie_animation_4 = "https://assets5.lottiefiles.com/packages/lf20_GmXdtd.json"
+#     lottie_anime_json4 = load_lottie_url(lottie_animation_4)
+#     st_lottie(lottie_anime_json4,key="guitar")
+# st.write("**MBT has tied up with Plexus Academy to provide best quality guitar lessons.Classes occurs every-**")
+# annotated_text(("Wednesday","from",'#8ef'),("7:00-8:30","pm","#faa"))
+# st.subheader("Kindly fill the form below for further discussion and enrollment.")
+# st.info("https://forms.gle/cSgXzbG77TrdDp1B9")
 
 
 st.header('Review and Ratings')
