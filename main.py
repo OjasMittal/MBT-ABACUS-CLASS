@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 import random
 
 img=Image.open('icon.jpg')
-st.set_page_config(page_title="MBT ABACUS & HANDWRITING CLASS",page_icon=img)
+st.set_page_config(page_title="MBT ABACUS CLASS",page_icon=img)
 #Animation
 def load_lottie_url(url: str):
     r = requests.get(url)
