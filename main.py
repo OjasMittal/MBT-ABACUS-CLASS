@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 import random
 
 img=Image.open('icon.jpg')
-st.set_page_config(page_title="MBT ABACUS CLASS",page_icon=img)
+st.set_page_config(page_title="MBT ABACUS & HANDWRITING CLASS",page_icon=img)
 #Animation
 def load_lottie_url(url: str):
     r = requests.get(url)
@@ -51,7 +51,7 @@ footer{visibility:hidden;}
 """
 st.markdown(hide_menu_style,unsafe_allow_html=True)
 
-st.title("***\N{brain}MBT ABACUS & HANDWRITING CLASS***\N{trophy}")
+st.title("***\N{brain}MBT ABACUS CLASS***\N{trophy}")
 
 
 col1,col2,col3=st.columns([1,2,1])
