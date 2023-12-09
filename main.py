@@ -51,7 +51,7 @@ footer{visibility:hidden;}
 """
 st.markdown(hide_menu_style,unsafe_allow_html=True)
 
-st.title("***\N{brain}MBT ABACUS CLASS***\N{trophy}")
+st.title("***\N{brain}MBT ABACUS & HANDWRITING CLASS***\N{trophy}")
 
 
 col1,col2,col3=st.columns([1,2,1])
